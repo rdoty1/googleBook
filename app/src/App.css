@@ -23,3 +23,25 @@
   to { transform: rotate(360deg); }
 }
 
+.header {
+  color:white;
+  font-size:30px;
+  text-align: center;
+  margin-right:150px;
+}
+
+.container {
+  margin:20px;
+  float:left;
+  height:500px;
+  width:45%;
+  border:solid;
+}
+
+.container2 {
+  margin:20px;
+  float:left;
+  height:500px;
+  width:48%;
+  border:solid;
+}
