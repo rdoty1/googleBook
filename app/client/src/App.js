@@ -4,6 +4,7 @@ import API from "./utils/API"
 import Nav from "./components/Nav"
 import Jumbotron from "./components/Jumbotron"
 import { List, ListItem } from "./components/List"
+import { Input, TextArea, FormBtn } from "./components/Form";
 
 class App extends Component {
   state = {
@@ -54,12 +55,17 @@ class App extends Component {
 
         <div className="container">
           <div className="App-intro">
+          <Jumbotron>
+              <h1>BOOKS TO READ</h1>
+            </Jumbotron>
           {this.state.books.length ? (
               <List>
                 {this.state.books.map(book => (
                   <ListItem key={book._id}>
                     
+                    
                       <strong>
+              
                         <this.Books book={book}/>
                       </strong>
                   
@@ -75,9 +81,15 @@ class App extends Component {
 
 
         <div className="container2">
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
+            <Jumbotron>
+              <h1>What Books Should I Read?</h1>
+            </Jumbotron>
+            <form>
+              <Input name="title" placeholder="Title (required)" />
+              <Input name="author" placeholder="Author (required)" />
+              <TextArea name="synopsis" placeholder="Synopsis (Optional)" />
+              <FormBtn>Submit Book</FormBtn>
+            </form>
         </div>
 
 
