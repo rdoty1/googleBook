@@ -45,3 +45,22 @@
   width:48%;
   border:solid;
 }
+
+.jumbotron {
+  color:white
+}
+
+.list-group {
+  color:black;
+  height:30%;
+  border:black;
+  border:solid
+
+
+}
+
+.list-group-item {
+  float:left;
+  margin:10px;
+  width:50%
+}
